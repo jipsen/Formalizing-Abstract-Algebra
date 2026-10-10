@@ -11,7 +11,7 @@ Read [`README.md`](../../README.md) first. Lake root is **this repo**. Follow st
 
 **Mathlib-first.** Abstract algebra is dense in Mathlib — search (`lean_local_search` etc.) before defining or restating.
 
-**External (host-installed):** [lean4-skills](https://github.com/cameronfreer/lean4-skills) (`/lean4:draft`, `/lean4:prove`, …) and [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp) (`lean_goal`, `lean_diagnostic_messages`, search tools). Project skills *call* those; they are not vendored here.
+**External (host-installed):** [lean4-skills](https://github.com/cameronfreer/lean4-skills) (`/lean4:draft`, `/lean4:prove`, …) and [Lean LSP MCP](https://github.com/oOo0oOo/lean-lsp-mcp) (`lean_goal`, `lean_diagnostic_messages`, search tools). Project skills *call* those; they are not vendored here.
 
 Sidecar policy: [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md). Skills: **maintain** (anchors + [`FAA/INVENTORY.md`](../../FAA/INVENTORY.md)), semi-informalize (Fitch), compare (audit), hammer (one milestone claim), formalize (all `sorry`s in a file).
 

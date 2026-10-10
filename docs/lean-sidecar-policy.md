@@ -74,7 +74,7 @@ Script: [`scripts/refresh-sidecar-anchors.py`](../scripts/refresh-sidecar-anchor
 | | Script (now) | Lean LSP MCP |
 |--|--------------|--------------|
 | Job | Regex-match decl names → rewrite `#Lnn` | Goals, diagnostics, mathlib search |
-| Install | In-repo `python3 scripts/…` | Host-level [lean-lsp-mcp](https://github.com/leanprover-community/lean-lsp-mcp) |
+| Install | In-repo `python3 scripts/…` | Host-level [lean-lsp-mcp](https://github.com/oOo0oOo/lean-lsp-mcp) |
 
 Proof synthesis uses host-level [lean4-skills](https://github.com/cameronfreer/lean4-skills) (`/lean4:*`). Neither is vendored in this repo; both are public install links (see README § Lean LSP and lean4-skills).
 

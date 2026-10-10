@@ -44,7 +44,7 @@ on an existing lemma.
 **External stack (host-installed, not in this repo):**
 
 - [lean4-skills](https://github.com/cameronfreer/lean4-skills) — `/lean4:prove`; `/lean4:autoprove` only with an explicit budget
-- [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp) — `lean_goal`, `lean_diagnostic_messages`, `lean_multi_attempt`, search tools
+- [Lean LSP MCP](https://github.com/oOo0oOo/lean-lsp-mcp) — `lean_goal`, `lean_diagnostic_messages`, `lean_multi_attempt`, search tools
 
 ## Contrast with `faa-hammer`
 

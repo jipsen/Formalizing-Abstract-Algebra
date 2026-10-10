@@ -38,7 +38,7 @@ One **claim** from [`MILESTONES.md`](../../MILESTONES.md) or a named lemma in `F
 **External stack (host-installed, not in this repo):**
 
 - [lean4-skills](https://github.com/cameronfreer/lean4-skills) — `/lean4:draft`, `/lean4:prove`, `/lean4:formalize`
-- [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp) — `lean_goal`, `lean_diagnostic_messages`, search tools
+- [Lean LSP MCP](https://github.com/oOo0oOo/lean-lsp-mcp) — `lean_goal`, `lean_diagnostic_messages`, search tools
 
 ## Modes
 

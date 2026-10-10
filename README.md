@@ -29,7 +29,7 @@ Lean 4 / Mathlib formalization of abstract algebra (groups, rings, fields, latti
 
 - **Community language.** Prefer established terms from mathematics and Lean/mathlib. Invent new phrases only when they name a real mathematical notion or a software interface this repo needs. Settled terminology decisions are recorded in [`docs/rosetta.md`](docs/rosetta.md) — consult it before naming.
 - **Search Mathlib before defining.** Abstract algebra is one of Mathlib's densest areas (`Group`, `Ring`, `Field`, `Subgroup`, `Ideal`, `QuotientGroup`, …) — a definition or lemma needed here very likely already exists. Use Lean LSP MCP search (`lean_local_search`, `lean_leansearch`, `lean_loogle`, `lean_leanfinder`) and `lean_goal` / `lean_diagnostic_messages` while editing.
-- **Proof filling:** [lean4-skills](https://github.com/cameronfreer/lean4-skills) — `/lean4:draft` → `/lean4:prove` or `/lean4:formalize` on one claim (`faa-hammer`); all `sorry`s in a file (`faa-formalize`); `/lean4:autoprove` only with an explicit budget. Use [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp) for live goals and search.
+- **Proof filling:** [lean4-skills](https://github.com/cameronfreer/lean4-skills) — `/lean4:draft` → `/lean4:prove` or `/lean4:formalize` on one claim (`faa-hammer`); all `sorry`s in a file (`faa-formalize`); `/lean4:autoprove` only with an explicit budget. Use [Lean LSP MCP](https://github.com/oOo0oOo/lean-lsp-mcp) for live goals and search.
 - Every `FAA/**/*.lean` has a Fitch `.md` sidecar; refresh when proofs change ([`docs/lean-sidecar-policy.md`](docs/lean-sidecar-policy.md)).
 - **After any `FAA/**/*.lean` edit:** run [`faa-maintain`](skills/faa-maintain/SKILL.md) (refreshes `#L…` via [`scripts/refresh-sidecar-anchors.py`](scripts/refresh-sidecar-anchors.py); keeps [`FAA/INVENTORY.md`](FAA/INVENTORY.md) in date).
 - Line width 100 for code. `fun x ↦ ...` for lambdas. **Never auto-commit.**
@@ -76,7 +76,7 @@ Canonical bodies live under [`skills/`](skills/). Thin wrappers (do not duplicat
 
 Install in the agent host; **not** vendored in this repo (both are public, single-click installs — no sister checkouts needed):
 
-- [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp)
+- [Lean LSP MCP](https://github.com/oOo0oOo/lean-lsp-mcp)
 - [lean4-skills](https://github.com/cameronfreer/lean4-skills)
 
 #### Verify the agent stack (for coauthors)
