@@ -1,0 +1,7 @@
+# Lake
+.lake/
+lake-manifest.json
+logs/
+
+# OS
+.DS_Store

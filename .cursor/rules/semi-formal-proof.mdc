@@ -1,0 +1,18 @@
+---
+description: FAA Fitch sidecar layout and KaTeX rules
+globs: ["FAA/**/*.md", "FAA.md"]
+---
+
+# FAA sidecars
+
+Read [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md) (canonical policy lives in `quantale-enriched-foundations`; the FAA file carries this repo's deltas) and [`AGENTS.md`](../../AGENTS.md). Prefer community language (math / algebra / Lean); see README standing rules.
+
+## When editing a sidecar
+
+- Parallel reading surface for Lean: state what each decl *is*, never what it is *not* (no "not required", "not the definition", contrastive asides); do not teach or foreshadow.
+- One `**Def**` / `**Lemma**` / `**Theorem**` per public declaration, same order as `.lean`.
+- Header links: `` [`name`](File.lean#Lnn) `` — Lean in the header; math in the body. Refresh via **faa-maintain**.
+- Proofs: Fitch if there is structure; short prose if citing general facts; `*Remark:*` only if nothing to sketch — see policy doc § Proofs.
+- KaTeX built-ins only; no hard wrapping — one physical line per paragraph and per Fitch step.
+- After `**Source.**` (and any `**Book.**` / `**Docs.**` lines): a `**Content.**` sentence naming what the file is; then the **Lean | Math** table whenever names diverge — bodies are written in the local math names, readable without Lean (policy doc § Local math names).
+- Write path: [`skills/faa-semi-informalize/SKILL.md`](../../skills/faa-semi-informalize/SKILL.md). Audit: [`skills/faa-compare/SKILL.md`](../../skills/faa-compare/SKILL.md).

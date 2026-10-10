@@ -1,0 +1,26 @@
+---
+description: Lean 4 library FAA — lean4-skills, Lean LSP MCP, Fitch sidecars
+globs: ["**/*.lean", "FAA/**", "skills/**"]
+---
+
+# FAA Lean
+
+Read [`README.md`](../../README.md) first. Lake root is **this repo**. Follow standing rules (community language, search Mathlib first, Fitch sidecars, no auto-commit).
+
+**Community language.** Use mathematics / algebra / Lean–mathlib terms. Invent new phrases only for a real mathematical notion or a needed software interface — not for informal grouping.
+
+**Mathlib-first.** Abstract algebra is dense in Mathlib — search (`lean_local_search` etc.) before defining or restating.
+
+**External (host-installed):** [lean4-skills](https://github.com/cameronfreer/lean4-skills) (`/lean4:draft`, `/lean4:prove`, …) and [Lean LSP MCP](https://github.com/leanprover-community/lean-lsp-mcp) (`lean_goal`, `lean_diagnostic_messages`, search tools). Project skills *call* those; they are not vendored here.
+
+Sidecar policy: [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md). Skills: **maintain** (anchors + [`FAA/INVENTORY.md`](../../FAA/INVENTORY.md)), semi-informalize (Fitch), compare (audit), hammer (one milestone claim), formalize (all `sorry`s in a file).
+
+Validate: `lean_diagnostic_messages` → `lake env lean <file>` → `lake build` at checkpoints. Line width 100 for code; `fun x ↦ ...`.
+
+**Comments** (`--`, `/-- … -/`, `/-! … -/`): no meaningless linebreaks — one sentence per physical line; prefer a long line over a mid-sentence break; blank lines between paragraphs OK (same spirit as sidecar line breaks in [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md)).
+
+**Not a textbook.** Neither `.lean` comments/docstrings nor `.md` sidecars carry exposition: state what a declaration *is*, never what it is *not* (no "not required to be …", "not the definition", "unlike …" asides); no survey, motivation, or curriculum commentary.
+
+## After every `.lean` edit (required)
+
+When you **create or modify** any `FAA/**/*.lean` file, run **[`faa-maintain`](../../skills/faa-maintain/SKILL.md)** before you report done — e.g. `/faa-maintain FAA/Basic.lean`. Do **not** skip by calling the script from memory without the skill checklist. Run **semi-informalize** when proofs or declarations changed. If you added, removed, or renamed a module, update [`FAA/INVENTORY.md`](../../FAA/INVENTORY.md) as part of maintain.

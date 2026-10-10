@@ -1,0 +1,28 @@
+---
+description: Multi-root workspace — prefix Formalizing-Abstract-Algebra/ in chat links
+alwaysApply: true
+---
+
+# Workspace (Formalizing-Abstract-Algebra)
+
+This repository folder is **`Formalizing-Abstract-Algebra`**. In **multi-root** Cursor workspaces, sibling repos often share similar relative paths (`README.md`, `skills/…`, `FAA/…`).
+
+## Paths in agent chat
+
+When citing files from **this** repository in chat:
+
+- **Always** prefix with **`Formalizing-Abstract-Algebra/`**
+- **Never** use bare `FAA/Basic.lean` or `skills/...` alone — Cursor may resolve them to a different workspace root.
+
+Examples:
+
+- ✅ `Formalizing-Abstract-Algebra/FAA/Basic.lean`
+- ✅ `Formalizing-Abstract-Algebra/skills/faa-maintain/SKILL.md`
+- ❌ `FAA/Basic.lean`
+
+## Sister repos
+
+- **`quantale-enriched-foundations/`** — canonical sidecar policy + rosetta
+- **`Locales-in-Lean/`**, **`Semiformalizing-lattices/`** — sibling formalization projects
+
+Paths on disk inside this repo keep normal repo-relative links.

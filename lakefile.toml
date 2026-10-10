@@ -1,0 +1,22 @@
+name = "faa"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["FAA"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+# mathlib's copyright-header check conflicts with the enforced `-- Sidecar:` first line.
+weak.linter.style.header = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+# Same pin as QEF / DFR / QECT.
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "FAA"
