@@ -86,8 +86,8 @@ After installing, run `lake build` once (the LSP needs built dependencies), then
 | Check | How | Expected |
 |-------|-----|----------|
 | Lean LSP MCP | Ask the agent to call `lean_diagnostic_messages` on `FAA/Basic.lean`, or check the host's MCP server list for `lean-lsp` | Returns diagnostics (an empty list on a clean file) |
-| lean4-skills | Run `/lean4:diagnose` in the agent (older installs: `/lean4:doctor`) | Reports each capability — Lean/Lake, Python, scripts path, LSP MCP — and flags what is missing |
-| lean4-skills scripts | `command -v lean4-skills-sorry-analyzer` in a shell | Prints a path |
+| lean4-skills | Ask the agent to run the **diagnose** workflow — `/lean4:diagnose` where the host registers commands (Claude Code, Codex); in Devin/Cursor ask for the `lean4` *skill* and the `diagnose` workflow by name | Reports each capability — Lean/Lake, Python, scripts path, LSP MCP — and flags what is missing |
+| lean4-skills scripts | `echo "$LEAN4_SCRIPTS"` (or `command -v lean4-skills-sorry-analyzer`) in a shell | Prints a path |
 
 Everything works without the MCP — it is just slower (`lake env lean` instead of live diagnostics). Without lean4-skills, the `faa-*` skills in this repo fall back to manual prove workflows.
 
