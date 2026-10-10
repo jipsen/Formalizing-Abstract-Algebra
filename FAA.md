@@ -9,3 +9,4 @@
 **Index**
 
 - [`FAA.Basic`](FAA/Basic.md) — charter
+- [`FAA.Preliminaries`](FAA/Preliminaries.md) — aata ch 1, sets / functions / equivalence relations
