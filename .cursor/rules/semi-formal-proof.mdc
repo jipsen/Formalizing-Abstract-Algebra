@@ -5,7 +5,7 @@ globs: ["FAA/**/*.md", "FAA.md"]
 
 # FAA sidecars
 
-Read [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md) (canonical policy lives in `quantale-enriched-foundations`; the FAA file carries this repo's deltas) and [`AGENTS.md`](../../AGENTS.md). Prefer community language (math / algebra / Lean); see README standing rules.
+Read [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md) (self-contained canonical policy for this repo) and [`AGENTS.md`](../../AGENTS.md). Prefer community language (math / algebra / Lean); see README standing rules.
 
 ## When editing a sidecar
 

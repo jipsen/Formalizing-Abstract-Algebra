@@ -2,7 +2,7 @@
 
 **Consult this file before naming** a declaration, docstring, or doc section. When a source uses a different term, record the mismatch in a docstring or sidecar `*Remark:*` — do not silently switch conventions.
 
-For shared enriched-category / order-theoretic terms, defer to the QEF rosetta: [`quantale-enriched-foundations/docs/rosetta.md`](../../quantale-enriched-foundations/docs/rosetta.md) (sister checkout; on GitHub: [alexhkurz/quantale-enriched-foundations](https://github.com/alexhkurz/quantale-enriched-foundations/blob/main/docs/rosetta.md)). Keep only FAA-specific rows here.
+This file is self-contained: terminology follows the source text (Judson, *Abstract Algebra: Theory and Applications*) and Mathlib naming. Record settled decisions below; do not import conventions from other projects.
 
 Sidecar policy: [`lean-sidecar-policy.md`](lean-sidecar-policy.md). Per-file Lean↔Math tables in each sidecar header define that file's local math *symbols*; this file records repo-wide naming *decisions* (which term, not which symbol).
 

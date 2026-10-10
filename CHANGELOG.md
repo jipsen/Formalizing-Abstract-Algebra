@@ -4,4 +4,5 @@
 
 ## 2026-10-10
 
-- Initialized the project: Lean 4 / Mathlib skeleton (`FAA`, toolchain `v4.33.1`), agent rules and `faa-*` skills, Fitch-sidecar infrastructure (`scripts/refresh-sidecar-anchors.py`, `docs/lean-sidecar-policy.md` → QEF canonical).
+- Initialized the project: Lean 4 / Mathlib skeleton (`FAA`, toolchain `v4.33.1`), agent rules and `faa-*` skills, Fitch-sidecar infrastructure (`scripts/refresh-sidecar-anchors.py`, `docs/lean-sidecar-policy.md`).
+- Made agent infrastructure self-contained: `docs/lean-sidecar-policy.md` is now the canonical policy (previously deferred to a sister repo), `docs/rosetta.md` no longer defers externally; all skills/rules resolve inside this repo.

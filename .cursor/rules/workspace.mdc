@@ -20,9 +20,8 @@ Examples:
 - ✅ `Formalizing-Abstract-Algebra/skills/faa-maintain/SKILL.md`
 - ❌ `FAA/Basic.lean`
 
-## Sister repos
+## Self-contained repo
 
-- **`quantale-enriched-foundations/`** — canonical sidecar policy + rosetta
-- **`Locales-in-Lean/`**, **`Semiformalizing-lattices/`** — sibling formalization projects
+All policy, skills, and terminology docs needed to work here live **in this repository** (`docs/`, `skills/`, `AGENTS.md`). Sister checkouts may exist in a local multi-root workspace, but nothing in this repo depends on them — do not create links or references into sibling folders.
 
 Paths on disk inside this repo keep normal repo-relative links.
