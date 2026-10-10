@@ -71,6 +71,7 @@ Canonical bodies live under [`skills/`](skills/). Thin wrappers (do not duplicat
 | [`faa-compare`](skills/faa-compare/SKILL.md) | Read-only Lean ↔ sidecar audit |
 | [`faa-hammer`](skills/faa-hammer/SKILL.md) | One milestone claim → lean4-skills |
 | [`faa-formalize`](skills/faa-formalize/SKILL.md) | All `sorry`s in one `FAA/**/*.lean` file |
+| [`faa-log`](skills/faa-log/SKILL.md) | Brief progress entries in `LOG.md` |
 
 ### Lean LSP and lean4-skills
 

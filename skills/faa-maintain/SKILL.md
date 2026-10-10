@@ -63,7 +63,7 @@ Policy: [`docs/lean-sidecar-policy.md`](../../docs/lean-sidecar-policy.md).
    python3 scripts/refresh-sidecar-anchors.py --check
    ```
 
-4. **Declaration coverage.** The anchor script only refreshes *existing* `[`decl`](File.lean#L…)` links — it does **not** detect declarations missing from the sidecar. For each touched `.lean`, check that every public decl (`theorem`/`def`/`abbrev`/`structure`/`class`/`instance`) has a `**Section**` entry (and a table row where the sidecar keeps one). Add missing entries in semi-informalize style; delegate wholesale coverage to **faa-semi-informalize**.
+4. **Declaration coverage.** The anchor script only refreshes *existing* `[`decl`](File.lean#L…)` links — it does **not** detect declarations missing from the sidecar. For each touched `.lean`, check that every public decl (`theorem`/`def`/`abbrev`/`structure`/`class`/`instance`) has a `**Section**` entry (and a table row where the sidecar keeps one). Add missing entries in semi-informalize style — all mathematical formulas in KaTeX (`$…$`/`$$…$$`, built-ins only, no custom macros); delegate wholesale coverage to **faa-semi-informalize**.
 
 5. **Stale-prose spot-check.** Grep the paired sidecar(s) for `scaffold`, `sorry`, `TODO` in Fitch/remark text that no longer matches Lean (e.g. Lean closed a `sorry` but sidecar still says stub). Also flag prose that defines by negation ("is not required", "not the definition", "unlike …" asides) in sidecars and Lean docstrings. Report hits; do not silently rewrite — point to **semi-informalize**.
 

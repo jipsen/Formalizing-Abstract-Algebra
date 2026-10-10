@@ -39,6 +39,7 @@ Anchors: [`skills/faa-maintain/SKILL.md`](../faa-maintain/SKILL.md).
 5. **Anchors:** optionally `python3 scripts/refresh-sidecar-anchors.py --check` (report only).
 6. **Proofs:** non-trivial Lean proofs without Fitch → **missing Fitch**; closed Lean with sidecar still saying `sorry`/`scaffold` → **stale prose**.
 7. **Tone (spot-check):** survey / "why this matters" / foreshadowing asides on infrastructure decls → **curriculum blurb** (policy doc § Purpose); suggest trim via **semi-informalize**.
+8. **KaTeX (spot-check):** math outside `$…$`/`$$…$$`, custom macros (`\newcommand`, `\DeclareMathOperator`), or non-KaTeX commands → **KaTeX violation**; all formulas in sidecars are KaTeX built-ins only (policy doc § KaTeX).
 
 ## Output
 

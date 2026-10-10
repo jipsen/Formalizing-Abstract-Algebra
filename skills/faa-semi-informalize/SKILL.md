@@ -51,7 +51,7 @@ If you create or materially edit a Lean file, update the sidecar **in the same r
    - One `**Def**` / `**Lemma**` / `**Theorem**` section per public decl, **same order** as Lean.
    - Header links: `` [`name`](File.lean#Lnn) `` (anchors refreshed by **faa-maintain**). Lean name in the header; math in the body.
    - State the claim; then pick proof form by *math* (policy doc § Proofs): Fitch if there is structure; short prose if citing general facts; `*Remark:*` only if there is nothing to sketch.
-   - KaTeX-safe math only (`\mathsf{Grp}`, …); no hard wrapping — one physical line per paragraph and per Fitch step.
+   - All mathematical formulas are written in KaTeX (`$…$` inline, `$$…$$` display) — KaTeX built-ins only (`\mathsf{Grp}`, `\operatorname*{…}`, …), no custom macros; unsupported commands get the policy's workaround table (`docs/lean-sidecar-policy.md` § KaTeX). No hard wrapping — one physical line per paragraph and per Fitch step.
    - After `**Source.**` (and any `**Book.**` / `**Docs.**` lines), a `**Content.**` sentence naming what the file is; then the **Lean | Math** table whenever names diverge — it defines the local math names the body is written in (policy doc § Local math names).
    - Not a textbook / not curriculum commentary. State what each decl *is* — never what it is *not* (no "not required to be …", "not the definition", "unlike …" asides).
    - Mathlib-first: a file that mostly instantiates Mathlib classes may legitimately have thin `*Remark:*` sections — record what the file adds, not what Mathlib already says.
