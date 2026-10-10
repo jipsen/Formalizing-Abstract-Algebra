@@ -1,4 +1,4 @@
--- Sidecar: FAA/Preliminaries.md
+-- Sidecar: FAA/Ch01Preliminaries.md
 import Mathlib.Data.Set.Basic
 import Mathlib.Data.Setoid.Partition
 import Mathlib.Data.Int.ModEq

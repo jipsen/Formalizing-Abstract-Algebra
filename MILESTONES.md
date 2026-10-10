@@ -20,8 +20,8 @@ Lake/Mathlib pinned, agent skills and rules installed, `FAA/Basic.lean` charter 
 
 Foundation + pipeline shakedown on material Mathlib covers completely.
 
-- **Ch 1 Preliminaries.** Sets and functions (injective/surjective/bijective), equivalence relations ↔ partitions, congruence mod *n* (`Int.ModEq`). Landmark: the equivalence-class/partition correspondence (§1.2). *(done — [`FAA/Preliminaries.lean`](FAA/Preliminaries.md))*
-- **Ch 2 The Integers.** Well-ordering and induction, division algorithm, gcd and the Euclidean algorithm, prime numbers, Euclid's lemma, **Fundamental Theorem of Arithmetic** (`Thm 2.2.7`; Mathlib `UniqueFactorizationMonoid`/`Nat.factorization`). Stretch: Chinese remainder theorem from the exercises.
+- **Ch 1 Preliminaries.** Sets and functions (injective/surjective/bijective), equivalence relations ↔ partitions, congruence mod *n* (`Int.ModEq`). Landmark: the equivalence-class/partition correspondence (§1.2). *(done — [`FAA/Ch01Preliminaries.lean`](FAA/Ch01Preliminaries.md))*
+- **Ch 2 The Integers.** Well-ordering and induction, division algorithm, gcd and the Euclidean algorithm, prime numbers, Euclid's lemma, **Fundamental Theorem of Arithmetic** (`Thm 2.2.7`; Mathlib `Nat.primeFactorsList`/`Nat.primeFactorsList_unique`). Stretch: Chinese remainder theorem from the exercises. *(done — [`FAA/Ch02Integers.lean`](FAA/Ch02Integers.md))*
 
 ## Phase 2 — Groups: first properties (aata ch 3–6)
 
