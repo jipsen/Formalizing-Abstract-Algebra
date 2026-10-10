@@ -6,3 +6,4 @@ What is in the library **now**. Roadmap: [`MILESTONES.md`](../MILESTONES.md). Ke
 - [`Basic`](Basic.md)
 - [`Ch01Preliminaries`](Ch01Preliminaries.md)
 - [`Ch02Integers`](Ch02Integers.md)
+- [`Ch03Groups`](Ch03Groups.md)

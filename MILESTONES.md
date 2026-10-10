@@ -27,7 +27,7 @@ Foundation + pipeline shakedown on material Mathlib covers completely.
 
 The core of every later phase.
 
-- **Ch 3 Groups.** Group axioms and examples (`ZMod n`, `U(n)` = `(ZMod n)ˣ`, symmetries of the triangle), cancellation, subgroup criteria (one-step / two-step / finite), powers of an element. Mathlib `Group`, `Subgroup`.
+- **Ch 3 Groups.** Group axioms and examples (`ZMod n`, `U(n)` = `(ZMod n)ˣ`, symmetries of the triangle), cancellation, subgroup criteria (one-step / two-step / finite), powers of an element. Mathlib `Group`, `Subgroup`. *(done — [`FAA/Ch03Groups.lean`](FAA/Ch03Groups.md))*
 - **Ch 4 Cyclic Groups.** Cyclic subgroups, `orderOf`, **every subgroup of a cyclic group is cyclic**, generators of `ZMod n` (count = φ(n)), roots of unity in ℂ. Mathlib `IsCyclic`, `orderOf`, `Nat.totient`.
 - **Ch 5 Permutation Groups.** `Equiv.Perm`/`Equiv.Perm.sign`, cycle decomposition, transpositions, parity, alternating group `alternatingGroup`, dihedral groups `DihedralGroup`. Landmarks: `sign` is a homomorphism to {±1}; |A_n| = n!/2.
 - **Ch 6 Cosets and Lagrange's Theorem.** Cosets, index, **Lagrange's theorem** (`Thm 6.2.2`), corollaries: order of an element divides |G|, groups of prime order are cyclic, **Fermat's little theorem** and **Euler's theorem** as corollaries.
